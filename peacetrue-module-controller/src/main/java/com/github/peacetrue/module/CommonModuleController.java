@@ -29,6 +29,14 @@ public class CommonModuleController {
         return moduleService.exists(params);
     }
 
+    /** 和{@link #exists(RecordInfo)}逻辑相同，便于前端唯一性验证使用 */
+    @ResponseBody
+    @GetMapping(value = "${peacetrue.module.urls.unique}")
+    public boolean unique(RecordInfo params) {
+        logger.info("判断记录[{}]是否唯一的", params);
+        return !moduleService.exists(params);
+    }
+
     @ResponseBody
     @PatchMapping(value = "${peacetrue.module.urls.modify}")
     public int modify(RecordInfo params, ModifyOptionsImpl options) {
