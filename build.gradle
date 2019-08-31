@@ -25,7 +25,7 @@ subprojects { project ->
 
     group "com.github.peacetrue.module"
     version "1.0-SNAPSHOT"
-    description "模板结构"
+    description "通用模型组件"
 
     apply plugin: "java"
     apply plugin: "java-library"

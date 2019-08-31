@@ -1,4 +1,4 @@
-description '模型的mybatis实现'
+description '通用模型服务mybatis实现'
 
 configurations {
     testArtifacts.extendsFrom testRuntime
