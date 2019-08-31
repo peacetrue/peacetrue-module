@@ -1,6 +1,6 @@
-= 模型类库模板
+= 通用模型组件
 xiayx <xiayouxue@hotmail.com>
-v1.0, 2019-08-01: SNAPSHOT
+v1.0, 2019-08-29: SNAPSHOT
 :doctype: docbook
 :toc: left
 :numbered:
@@ -10,108 +10,4 @@ v1.0, 2019-08-01: SNAPSHOT
 :testsourcedir: src/test/java
 :source-highlighter: highlightjs
 
-一个模板项目，包含基于``Demo``实体的增删改查示例。
-此模板项目，基于 https://github.com/peacetrue/peacetrue-template-gradle[gradle模板项目^]创建，拥有与其一致的环境。
-
-== 项目环境
-模板项目环境如下：
-
-* gradle:5.4+
-* spring-boot:1.5+
-* mybatis:3.6+
-* vue:2.6+
-* iview:3.4+
-
-== 模块结构
-image::structure.png[]
-
-
-== 系统功能
-
-=== 示例
-.属性
-* 主键
-* 编码
-* 名称
-* 创建者
-* 创建时间
-* 修改者
-* 修改时间
-
-==== 新增
-新增示例，检查编码唯一性。
-
-==== 查询
-分页查询示例信息，编码、名称模糊匹配，创建时间范围匹配，可按创建时间、修改时间排序。
-
-==== 查看
-查看示例详细信息。
-
-==== 修改
-修改示例信息，包括编码、名称、创建者、创建时间、修改者、修改时间，检查编码唯一性。
-
-==== 删除
-删除示例信息，可单个或批量删除。
-
-
-== 示例项目
-* 运行``peacetrue-template-sample/src/main/java/com/github/peacetrue/template/TemplateApplication.java``启动服务
-* 运行``cd peacetrue-template-ui && npm start``查看页面效果
-
-
-== maven配置
-
-.配置快照仓库
-[source%nowrap,maven]
-----
-<repository>
-    <id>sonatype-snapshots</id>
-    <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-</repository>
-----
-
-.服务接口
-[source%nowrap,maven]
-----
-<dependency>
-  <groupId>com.github.peacetrue.template</groupId>
-  <artifactId>peacetrue-template-service-api</artifactId>
-  <version>1.0-SNAPSHOT</version>
-</dependency>
-----
-
-.服务mybatis实现
-[source%nowrap,maven]
-----
-<dependency>
-  <groupId>com.github.peacetrue.template</groupId>
-  <artifactId>peacetrue-template-service-mybatis</artifactId>
-  <version>1.0-SNAPSHOT</version>
-</dependency>
-----
-
-.控制器
-[source%nowrap,maven]
-----
-<dependency>
-  <groupId>com.github.peacetrue.template</groupId>
-  <artifactId>peacetrue-template-controller</artifactId>
-  <version>1.0-SNAPSHOT</version>
-</dependency>
-----
-
-.前端
-[source%nowrap,maven]
-----
-<dependency>
-  <groupId>com.github.peacetrue.template</groupId>
-  <artifactId>peacetrue-template-ui</artifactId>
-  <version>1.0-SNAPSHOT</version>
-</dependency>
-----
-
-== 技术细节
-
-
-
-
+提供基于模型信息的通用方法，目前支持【判断记录是否存在】和【修改】两个方法。

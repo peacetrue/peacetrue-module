@@ -1,7 +1,5 @@
-rootProject.name = 'peacetrue-template-model-library'
-include 'peacetrue-template-service-api'
-include 'peacetrue-template-service-mybatis'
-include 'peacetrue-template-controller'
-include 'peacetrue-template-type'
-include 'peacetrue-template-sample'
-                                     
+rootProject.name = 'peacetrue-module'
+include 'peacetrue-module-service-api'
+include 'peacetrue-module-service-mybatis'
+include 'peacetrue-module-controller'
+include 'peacetrue-module-sample'

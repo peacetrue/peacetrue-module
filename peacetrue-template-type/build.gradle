@@ -1,9 +1,0 @@
-description '模板服务类型'
-
-dependencies {
-    api project(":peacetrue-template-service-api")
-    implementation "com.github.peacetrue:peacetrue-spring:1.1.2-SNAPSHOT"
-    implementation "org.springframework.boot:spring-boot-autoconfigure"
-    compileOnly "org.springframework.boot:spring-boot-configuration-processor"
-    annotationProcessor "org.springframework.boot:spring-boot-configuration-processor"
-}
